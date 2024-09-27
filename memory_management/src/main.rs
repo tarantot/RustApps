@@ -34,9 +34,9 @@ fn stack_only(b: i32) -> Result<i32, String> {
 }
 
 fn stack_and_heap() -> Result<i32, String> {
-    let d = 5;
+    let d:i32 = 5;
     let e = Box::new(Some(7));
-    let heap_value = e.unwrap_or(None).ok_or("Heap value is None")?;
+    let heap_value = e.ok_or("Heap value is None")?;
     let sum = d.checked_add(heap_value).ok_or("Overflow occurred in stack_and_heap")?;
     Ok(sum)
 }
