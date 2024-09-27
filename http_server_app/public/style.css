@@ -1,3 +1,104 @@
-h1 {
-    color: red
+/* Reset some browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navigation li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navigation li a:hover {
+    color: #ff6600;
+}
+
+/* Grid Layout for Index Page */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid-container section {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action button {
+    background-color: #ff6600;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.call-to-action button:hover {
+    background-color: #cc5200;
+}
+
+/* Flexbox Layout for Hello Page */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.content, .code-snippet {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.code-snippet pre {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
